@@ -7,10 +7,78 @@
     /* Firefox */
 }
 
+::selection {
+    background-color: #46d1dd;
+    color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.issuesContainer,
+.solutionContainer {
+    font-size: 16px;
+}
+
+.solutionContainer {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+.imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    user-select: none;
+    margin-bottom: 3rem;
+}
+
+.portfolio-img img {
+    border: 2px solid #fff;
+    padding: .5rem;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
+    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
+}
+
+.portfolio-img img:hover {
+    transition: 0.4 ease-in;
+    opacity: .65;
+    animation: pulse 550ms ease-in-out;
+}
+
+.h1-16 {
+    font-size: 16px;
+}
+
+hr {
+    opacity: 0.15;
+    height: .5rem;
+    background-color: #fff;
+}
+
+.imgContainer img {
+    border: 2px solid #46d1dd;
+    margin: 10px auto;
+    padding: .5rem;
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
+    box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
+}
+
+.imgContainer img:hover {
+    cursor: pointer;
+    animation: pulse 550ms ease-in-out;
 }
 
 html {
@@ -26,6 +94,7 @@ body {
     background: url("images/sitebg.gif") no-repeat center fixed;
     background-size: cover;
     font-family: 'Noto Sans JP', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -43,8 +112,107 @@ img {
     width: 100%;
 }
 
+.btn {
+    padding: 1rem 2rem;
+    border: 1px solid #fff;
+    margin: 1rem .25rem;
+    font-size: 16px;
+}
+
+.gitBtnContainer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btnContainer {
+    margin-top: 4rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    border-color: #46d1dd;
+    background-color: #46d1dd;
+    color: #122331;
+}
+
 
 /*End global*/
+
+
+/* Start Modal */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (Image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+}
+
+.modal-content img {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #46d1dd;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* End Modal */
 
 
 /*Start reusable*/
@@ -282,6 +450,14 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     grid-gap: 2.5rem;
+    text-align: center;
+}
+
+.skills-used {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
     text-align: center;
 }
 
@@ -530,6 +706,18 @@ input[type="submit"]:hover {
 
 /*Start animations*/
 
+@keyframes expand {
+    0% {
+        scale: 1;
+    }
+    75% {
+        scale: 1.5;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(87, 214, 253, 0.99);
@@ -652,6 +840,10 @@ input[type="submit"]:hover {
     .portfolio-img {
         margin: 0 0 2rem 0;
         order: 1;
+    }
+    .portfolio-img {
+        width: 900px;
+        object-fit: cover;
     }
     .profile-img {
         margin: 0 0 7rem 0;

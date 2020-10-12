@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chatidice | Odis Barnett</title>
+    <link rel="icon" type=" image/png" href="./images/favicon.png" />
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Google Fonts NOTO SANS JP + ROBOTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Portfolio Section -->
+    <section class="" style="margin-bottom: 14rem;" id="portfolio">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="section-heading">
+                <h2><a class="cta" href="index.html">Go Back</a></h2>
+                <h1>Chatidice</h1>
+                <h6 style="text-transform: uppercase;">Nodejs + Socket.io + Express</h6>
+            </div>
+            <!-- Portfolio Items -->
+            <div>
+
+                <!-- Chatidice -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="200">
+                        <a target="_blank" href="http://www.chatidice.xyz/"><img src="images/chatidice.jpg" alt="" srcset=""></a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skills-used">
+                        <!-- HTML5 -->
+                        <div class="skill" data-aos="fade-in" data-aos-delay="400">
+                            <div class="icon-container">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                        </div>
+                        <!-- CSS -->
+                        <div class="skill" data-aos="fade-in" data-aos-delay="410">
+                            <div class="icon-container">
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <h3>CSS3</h3>
+                        </div>
+                        <!-- NodeJS -->
+                        <div class="skill" data-aos="fade-in" data-aos-delay="450">
+                            <div class="icon-container">
+                                <i class="fab fa-node"></i>
+                            </div>
+                            <h3>NodeJS</h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="portfolio-description has-mr" data-aos="fade-right" data-aos-delay="300">
+                        <div class="imgContainer">
+                            <img src="./images/chatidice-2.JPG" id="img1" alt="">
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                            <img src="./images/chatidice-3.jpg" id="img2" alt="">
+                            <img src="./images/chatadice-4.jpg" id="img3" alt="">
+
+                        </div>
+                        <!-- Desc -->
+                        <hr>
+                        <div class="h1-16">
+                            <h1>Description:</h1>
+                        </div>
+
+                        <br>
+                        <p>Chatidice is a chat application built using NodeJS, Express, and Socket.io. You can choose between 3 rooms, and add an unlimited amount of users!
+                            <br><br>
+                            <hr>
+                            <br>
+                            <!-- Issues -->
+                            <div class="issuesContainer">
+                                <h1>Bugs I Ran Into:</h1>
+                                <ul>
+                                    <li>
+                                        <em>USERNAME did not display correctly on message enter</em>
+                                    </li>
+                                    <li>
+                                        <em>Client crashed when 3 or more users joined a room</em>
+                                    </li>
+                                    <li>
+                                        <em>USERS did not display in a list correctly in the sidebar panel</em>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Solutions -->
+                            <div class="solutionContainer">
+                                <h1>How I Fixed Them:</h1>
+                                <ul>
+                                    <li>
+                                        <em>Exported USERNAME function as module and imported to entry point (server.js)</em>
+                                    </li>
+                                    <li>
+                                        <em>Re-structured ADD USERS function</em>
+                                    </li>
+                                    <li>
+                                        <em>Re-structured ADD USERS function, added new DOM element to main.js</em>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </p>
+
+                    </div>
+                    <div class="btnContainer">
+                        <a class="btn" target="_blank" href="https://chatidice.herokuapp.com/">view website</a>
+                        <a class="btn" target="_blank" href="https://github.com/othewebdev/chatidice">github</a>
+                    </div>
+
+                </div>
+    </section>
+
+
+    <footer class="copyright">
+        <p>&copy; 2020 Odis Barnett</p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

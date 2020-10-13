@@ -49,6 +49,10 @@ ul {
     font-weight: 100;
 }
 
+.hbtm h1 {
+    font-weight: 700;
+}
+
 .icon {
     font-size: 64px;
     background-clip: text;

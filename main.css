@@ -32,17 +32,15 @@ ul {
 }
 
 .hbtm {
-    border-radius: 16px;
+ 
     margin: 0 auto;
     width: 85%;
-    padding: 2rem;
-    border: 3px solid #46d1dd;
+    padding: 4rem;
     font-weight: 200;
     color: #46d1dd;
     vertical-align: middle;
     text-align: center;
     font-size: 2em;
-    animation: pulse 750ms infinite;
 }
 
 .hbtm h3 {

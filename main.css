@@ -32,16 +32,21 @@ ul {
 }
 
 .hbtm {
+    border-radius: 16px;
     margin: 0 auto;
-    width: 60%;
+    width: 85%;
     padding: 2rem;
-    border: 1px solid #46d1dd;
+    border: 3px solid #46d1dd;
     font-weight: 200;
     color: #46d1dd;
     vertical-align: middle;
     text-align: center;
     font-size: 2em;
-    animation: pulse 550ms infinite;
+    animation: pulse 750ms infinite;
+}
+
+.hbtm h3 {
+    font-weight: 100;
 }
 
 .icon {
@@ -61,6 +66,7 @@ ul {
 .portfolio-img img {
     border: 2px solid #fff;
     padding: .5rem;
+    border-radius: 18px;
     -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
     -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
     box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
@@ -90,6 +96,7 @@ hr {
     height: 20rem;
     object-fit: cover;
     object-position: center;
+    border-radius: 9px;
     -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
     -moz-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
     box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
@@ -135,6 +142,7 @@ img {
     padding: 1rem 2rem;
     border: 1px solid #fff;
     margin: 1rem .25rem;
+    border-radius: 7px;
     font-size: 16px;
 }
 

@@ -31,6 +31,25 @@ ul {
     list-style: none;
 }
 
+.hbtm {
+    margin: 0 auto;
+    width: 60%;
+    padding: 2rem;
+    border: 1px solid #46d1dd;
+    font-weight: 200;
+    color: #46d1dd;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2em;
+    animation: pulse 550ms infinite;
+}
+
+.icon {
+    font-size: 64px;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
 .imgContainer {
     display: flex;
     flex-wrap: wrap;

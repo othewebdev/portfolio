@@ -32,23 +32,21 @@ ul {
 }
 
 .hbtm {
- 
+    border-radius: 16px;
     margin: 0 auto;
     width: 85%;
-    padding: 4rem;
+    padding: 2rem;
+    border: 3px solid #46d1dd;
     font-weight: 200;
     color: #46d1dd;
     vertical-align: middle;
     text-align: center;
     font-size: 2em;
+    animation: pulse 750ms infinite;
 }
 
 .hbtm h3 {
     font-weight: 100;
-}
-
-.hbtm h1 {
-    font-weight: 700;
 }
 
 .icon {
@@ -577,6 +575,23 @@ li {
 
 .portfolio-description .cta:hover {
     color: #cc00ff;
+}
+
+.other-proj-panel {
+    text-align: center;
+    font-size: 1.8em;
+    align-items: center;
+    list-style: none;
+}
+
+.other-proj-panel li a:hover {
+    color: #cc00ff;
+}
+
+.header-li {
+    color: #46d1dd;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 

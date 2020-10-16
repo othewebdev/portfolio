@@ -588,6 +588,16 @@ li {
     color: #cc00ff;
 }
 
+.other-proj-panel li p {
+    font-weight: 300;
+    font-size: 12.5px;
+}
+
+.img-o {
+    vertical-align: middle;
+    width: 4rem;
+}
+
 .header-li {
     color: #46d1dd;
     font-size: 1.2em;

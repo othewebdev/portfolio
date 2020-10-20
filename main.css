@@ -120,7 +120,7 @@
     body {
         width: 100%;
         height: 100%;
-        background: url("images/sitebg.gif") no-repeat center fixed;
+        background: linear-gradient(to top, #0c0c0c, #050505);
         background-size: cover;
         font-family: 'Noto Sans JP', sans-serif;
         overflow-x: hidden;
@@ -702,24 +702,16 @@
     /*End animations*/
     /*Start media queries*/
     
-    @media screen and (max-width: 1324px) {
-        body {
-            background: url("images/sitebg2.gif") no-repeat center fixed;
-            background-size: cover;
-        }
-    }
-    
     @media screen and (max-width: 768px) {
         img {
             width: 85%;
         }
         body {
-            transition: 0.3s ease-in;
-            background: linear-gradient(to top, #2d5d85, #46d1dd);
+            background: linear-gradient(to top, #0c0c0c, #050505);
             font-family: 'Noto Sans JP', sans-serif;
         }
         .landing-text h1 {
-            font-size: 12rem;
+            font-size: 7rem;
             background: linear-gradient(to top, #f1f1f1, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -791,7 +783,7 @@
             width: 100%;
         }
         .contact {
-            color: #2d5d85;
+            color: #fff;
         }
         .lf {
             text-align: center;
@@ -804,7 +796,7 @@
             right: 2rem;
         }
         .landing-text h1 {
-            font-size: 8rem;
+            font-size: 6rem;
         }
         .landing-text h6 {
             font-size: 1.4rem;

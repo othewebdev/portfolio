@@ -295,16 +295,16 @@
         height: 100vh;
         position: fixed;
         top: -100vh;
-        z-index: 50;
-        background-color: rgba(0, 0, 0, 0.75);
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.8);
         border-bottom-right-radius: 100%;
         border-bottom-left-radius: 100%;
-        transition: all 650ms cubic-bezier(1, 0, 0, 1);
+        transition: all 350ms cubic-bezier(1, 1, 1, 1);
     }
     
     .top-nav.open {
         top: 0;
-        border-radius: initial;
+        border-radius: 23px;
     }
     
     .nav-list {
@@ -348,7 +348,7 @@
     }
     
     .menu-toggler.open {
-        transform: rotate(45deg);
+        transform: scale(1.1) translateX(-15px);
     }
     
     .bar {
@@ -364,21 +364,21 @@
     }
     
     .bar.half {
-        width: 50%;
+        width: 100%;
     }
     
     .open .bar.start {
-        transform: rotate(-450deg) translateX(.8rem);
+        transform: scale(1.5);
     }
     
     .bar.end {
         align-self: flex-end;
         transform-origin: left;
-        transition: transform 500ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
+        transition: transform 500ms cubic-bezier(1, 1, 1, 1)
     }
     
     .open .bar.end {
-        transform: rotate(-450deg) translateX(-.8rem);
+        transform: scale(1.5);
     }
     
     .landing-text {
@@ -729,13 +729,13 @@
             background: linear-gradient(to top, #f1f1f1, #ffffff);
         }
         .nav-list {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         li {
             margin: 2rem 0;
         }
         .nav-link {
-            font-size: 3.25rem;
+            font-size: 16px;
         }
         .about-heading h1 {
             font-size: 8rem;

@@ -702,7 +702,18 @@
     /*End animations*/
     /*Start media queries*/
     
+    @media screen and (max-width: 1024px) {
+        .portfolio-img img {
+            width: 550px;
+            height: 355px;
+        }
+    }
+    
     @media screen and (max-width: 768px) {
+        .portfolio-img img {
+            width: 375px;
+            height: 215px;
+        }
         img {
             width: 85%;
         }
@@ -813,10 +824,6 @@
         .portfolio-img {
             margin: 0 0 2rem 0;
             order: 1;
-        }
-        .portfolio-img img {
-            width: 375px;
-            height: 215px;
         }
         .profile-img {
             margin: 0 0 7rem 0;

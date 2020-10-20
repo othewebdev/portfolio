@@ -142,11 +142,19 @@
     }
     
     .btn {
+        background: none;
         padding: 1rem 2rem;
-        border: 1px solid #fff;
+        border: 1px solid #eee;
         margin: 1rem .25rem;
         border-radius: 7px;
         font-size: 16px;
+    }
+    
+    .btn:hover {
+        cursor: pointer;
+        transition: 0.2s ease-in;
+        border-color: #122331;
+        background-color: #122331;
     }
     
     .gitBtnContainer {
@@ -156,14 +164,6 @@
     
     .btnContainer {
         margin-top: 4rem;
-    }
-    
-    .btn:hover {
-        cursor: pointer;
-        transition: 0.2s ease-in;
-        border-color: #46d1dd;
-        background-color: #46d1dd;
-        color: #122331;
     }
     /*End global*/
     /* Start Modal */

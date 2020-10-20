@@ -711,7 +711,7 @@
             font-family: 'Noto Sans JP', sans-serif;
         }
         .landing-text h1 {
-            font-size: 7rem;
+            font-size: 5rem;
             background: linear-gradient(to top, #f1f1f1, #ffffff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -796,7 +796,7 @@
             right: 2rem;
         }
         .landing-text h1 {
-            font-size: 6rem;
+            font-size: 4.5rem;
         }
         .landing-text h6 {
             font-size: 1.4rem;

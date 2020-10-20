@@ -710,6 +710,9 @@
     }
     
     @media screen and (max-width: 768px) {
+        img {
+            width: 85%;
+        }
         body {
             transition: 0.3s ease-in;
             background: linear-gradient(to top, #2d5d85, #46d1dd);
@@ -784,6 +787,9 @@
     }
     
     @media screen and (max-width:600px) {
+        img {
+            width: 100%;
+        }
         .contact {
             color: #2d5d85;
         }

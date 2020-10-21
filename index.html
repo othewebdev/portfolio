@@ -30,7 +30,7 @@
         <nav class="top-nav">
             <ul class="nav-list">
                 <li>
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" data-text="Home" href="index.html"></a>
                 </li>
                 <li>
                     <a class="nav-link" href="#about">About</a>
@@ -55,7 +55,7 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img has-mr" data-aos="fade-right" data-aos-delay="200">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="200">
                 <img src="images/profile.png">
             </div>
             <div class="about-details" data-aos="fade-left" data-aos-delay="400">
@@ -64,21 +64,21 @@
                     <h6>Me</h6>
                 </div>
                 <p>
-                    Hi! My name is Odis Barnett, I am a 19 year-old self-taught web developer from Kansas City, Kansas. I develop most applications using ReactJS, my projects are available to view in the portfolio section
-                    <span><a href="#portfolio" class="contact">here.</a></span>
+                    Hi, my name is Odis Barnett. I am a 19-year-old self-taught web developer from Kansas City, Kansas. I develop most applications using React. My projects are available to view in the portfolio section
+                    <span><a href="#portfolio" id="p_link">here.</a></span>
                     <br><br>
                     <span>My preferred method of contact is email:</span>
                     <br>
-                    <span><a href="#contact" class="contact">obarnettdev01@gmail.com</a></span>
+                    <span><a href="#contact" id="e_link">obarnettdev01@gmail.com</a></span>
                     <br>
                 </p>
-                <div class="gitBtnContainer lf">
-                    <button class="btn">
-                            <a target="_blank" href="https://github.com/othewebdev">view my github</a>
-                    </button>
-                    <button class="btn">
-                            <a target="_blank" href="https://drive.google.com/file/d/1o2Ovlu7yXiqymIR54pSgv1Y56SoAWO43/view?usp=sharing">full resume (PDF)</a>
-                    </button>
+                <div class="gitBtnContainer">
+                    <a class="btn" target="_blank" href="https://github.com/othewebdev">
+                       view my github
+                    </a>
+                    <a class="btn" target="_blank" href="https://drive.google.com/file/d/158pb4EDLY1j0GFgKdPD8snMfYOCeXchg/view?usp=sharing">
+                      full resume (PDF)
+                    </a>
                 </div>
             </div>
         </div>
@@ -90,26 +90,26 @@
             <!-- Heading -->
             <div class="section-heading">
                 <h1>Skills</h1>
-                <h6>Technologies I specialize in.</h6>
+                <h6>Software and Technologies.</h6>
             </div>
             <!-- Skills -->
             <div class="my-skills">
                 <!-- HTML5 -->
-                <div class="skill" data-aos="fade-in" data-aos-delay="400">
+                <div class="skill" data-aos="slide-in" data-aos-delay="400">
                     <div class="icon-container">
                         <i class="fab fa-html5"></i>
                     </div>
                     <h3>HTML5</h3>
                 </div>
                 <!-- CSS -->
-                <div class="skill" data-aos="fade-in" data-aos-delay="410 ">
+                <div class="skill" data-aos="faslidede-in" data-aos-delay="410">
                     <div class="icon-container">
                         <i class="fab fa-css3"></i>
                     </div>
                     <h3>CSS3</h3>
                 </div>
                 <!-- JS -->
-                <div class="skill" data-aos="fade-in" data-aos-delay="420">
+                <div class="skill" data-aos="slide-in" data-aos-delay="420">
                     <div class="icon-container">
                         <i class="fab fa-js "></i>
                     </div>
@@ -117,7 +117,7 @@
                 </div>
 
                 <!-- ReactJS -->
-                <div class="skill" data-aos="fade-in" data-aos-delay="450">
+                <div class="skill" data-aos="slide-in" data-aos-delay="450">
                     <div class="icon-container">
                         <i class="fab fa-react"></i>
                         <i class="fab fa-node-js"></i>
@@ -129,7 +129,7 @@
 
 
                 <!-- Adobe Suite -->
-                <div class="skill" data-aos="fade-in" data-aos-delay="460">
+                <div class="skill" data-aos="slide-in" data-aos-delay="460">
                     <div class="icon-container">
                         <i class="fab fa-adobe"></i>
                     </div>
@@ -138,7 +138,7 @@
                     </p>
                 </div>
                 <!-- Figma -->
-                <div class="skill" data-aos="fade-in" data-aos-delay="480">
+                <div class="skill" data-aos="slide-in" data-aos-delay="480">
                     <div class="icon-container">
                         <i class="fab fa-figma"></i>
                     </div>
@@ -157,16 +157,16 @@
 
             <!-- Heading -->
             <div class="section-heading">
-                <img style="width:30%" src="images/facebig.gif" alt=" " srcset=" ">
+                <img style="width:30%" src="images/facebig.gif" alt="Face Gif">
                 <h1>Portfolio</h1>
-                <h6>View some of my recent work</h6>
+                <h6>View Recent Work.</h6>
             </div>
             <!-- Portfolio Items -->
             <div>
 
                 <!-- TRULEY UNIQUE -->
                 <div class="portfolio-item">
-                    <div class="portfolio-description has-mr" data-aos="fade-right" data-aos-delay="300">
+                    <div class="portfolio-description has-mr" data-aos="slide-right" data-aos-delay="300">
                         <h2>TRULEY UNIQUE</h2>
                         <h6>AOS, TailwindCSS, <span class="bootstrap">Bootstrap,</span> jQuery,
                             <span style="color:#fbb800 ">AWS</span> </h6>
@@ -174,14 +174,16 @@
                         </p>
                         <a class="cta" href="trUni.html">View Details</a>
                     </div>
-                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
+                    <div class="portfolio-img" data-aos="slide-left" data-aos-delay="400">
                         <a target="_blank" href="https://truleyunique.com"><img data-src="images/truleyweb1.png" src="images/truleyweb1.png" alt="TruleyUnique"></a>
                     </div>
                 </div>
-
+                <br>
+                <hr>
+                <br>
                 <!-- MOVIEFLIX -->
                 <div class="portfolio-item">
-                    <div class="portfolio-description has-mr" data-aos="fade-right" data-aos-delay="300">
+                    <div class="portfolio-description has-mr" data-aos="slide-right" data-aos-delay="300">
                         <h2>MOVIEFLIX</h2>
                         <h6><span style="color:#00ced1 ">ReactJS, </span> <span style="color:orangered">Firebase,</span> Auth, Fuse.JS
                         </h6>
@@ -189,14 +191,16 @@
                         </p>
                         <a class="cta " href="mvflix.html">View Details</a>
                     </div>
-                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
+                    <div class="portfolio-img" data-aos="slide-left" data-aos-delay="400">
                         <a target="_blank " href="https://movieflix-react.firebaseapp.com/"><img src="images/movieflix1.JPG" alt=" " srcset=" "></a>
                     </div>
                 </div>
-
+                <br>
+                <hr>
+                <br>
                 <!-- NETVINK -->
                 <div class="portfolio-item">
-                    <div class="portfolio-description has-mr" data-aos="fade-right" data-aos-delay="300">
+                    <div class="portfolio-description has-mr" data-aos="slide-right" data-aos-delay="300">
                         <h2>NETVINK</h2>
                         <h6><span style="color:#00ced1 ">ReactJS, </span> unDRAW (Images)
                         </h6>
@@ -208,27 +212,31 @@
                         <a target="_blank " href="http://netvink.xyz/ "><img class="portimg" src="images/netvink.jpg" alt=" " srcset=" "></a>
                     </div>
                 </div>
-
+                <br>
+                <hr>
+                <br>
                 <!-- CHATIDICE -->
                 <div class="portfolio-item">
-                    <div class="portfolio-description has-mr" data-aos="fade-right" data-aos-delay="300">
+                    <div class="portfolio-description has-mr" data-aos="slide-right" data-aos-delay="300">
                         <h2>CHATIDICE</h2>
                         <h6><span style="color:#00d13f ">NodeJS, </span> Socket.io, Express
                         </h6>
-                        <p> A chat web application with users and chat rooms. Unlimited users = unlimited fun!
+                        <p>A chat web application with users and chat rooms. Messages stored in socket.io.
                         </p>
-                        <a class="cta " href="chtdce.html">View Details</a>
+                        <a class="cta" href="chtdce.html">View Details</a>
                     </div>
                     <div class="portfolio-img" data-aos="fade-left" data-aos-delay="400">
-                        <a target="_blank " href="http://www.chatidice.xyz/"><img class="portimg" src="images/chatidice.jpg" data-src="images/chatidice.jpg" alt="Chatadice"></a>
+                        <a target="_blank " href="http://chatidice.xyz/"><img class="portimg" src="images/chatidice.jpg" data-src="images/chatidice.jpg" alt="Chatadice"></a>
                     </div>
                 </div>
-
+                <br>
+                <hr>
+                <br>
                 <!-- FOTOHANCE -->
                 <div class="portfolio-item">
-                    <div class="portfolio-description has-mr" data-aos="fade-right" data-aos-delay="300">
+                    <div class="portfolio-description has-mr" data-aos="slide-right" data-aos-delay="300">
                         <h2>FOTOHANCE</h2>
-                        <h6><span style="color:#00ced1 ">ReactJS, </span> <span class="bootstrap">Bootstrap </span> </h6>
+                        <h6><span style="color:#00ced1 ">ReactJS, </span> <span class="bootstrap">Bootstrap</span></h6>
                         <p>Basic random photo editor app that pulls a random image, resizes it, and allows you to edit properties of the image.
                         </p>
                         <a class="cta " href="fthnc.html">View Details</a>
@@ -245,7 +253,7 @@
                     <li>
                         <img data-src="./images/FaviconCT.png" src="./images/FaviconCT.png" class="img-o" alt="CryptoTrack Favicon">
                         <a target="_blank" href="http://othewebdev.github.io/cryptotrack">Cryptotrack</a>
-                        <p>React API web app that uses Axios to get Bitcoin currencies</p>
+                        <p>React API web app that uses axios to get bitcoin currencies</p>
                     </li>
                     <li>
                         <img data-src="./images/FaviconGSAP.png" src="./images/FaviconGSAP.png" class="img-o" alt="GSAP Favicon">
@@ -265,7 +273,7 @@
 
             <div class="section-heading">
                 <h1>Contact</h1>
-                <h6>Let's Collaborate!</h6>
+                <h6>Collaboration or employment opportunities welcome.</h6>
             </div>
 
             <!-- Contact Form -->

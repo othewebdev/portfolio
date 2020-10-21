@@ -1,5 +1,20 @@
     /*Start global*/
     
+    @font-face {
+        font-family: Catamaran;
+        src: url('./fonts/Catamaran-Medium.ttf')
+    }
+    
+    @font-face {
+        font-family: LatoR;
+        src: url('./fonts/Lato-Regular.ttf')
+    }
+    
+    @font-face {
+        font-family: LatoLH;
+        src: url('./fonts/Lato-Light.ttf')
+    }
+    
      ::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: white;
@@ -16,6 +31,10 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+    
+    button {
+        outline: none;
     }
     
     .issuesContainer,
@@ -76,9 +95,9 @@
     }
     
     .portfolio-img img:hover {
-        transition: 0.4 ease-in;
-        opacity: .65;
-        animation: pulse 550ms ease-in-out;
+        transition: 200ms ease-in-out;
+        opacity: .8;
+        box-shadow: 0 0 24px rgba(0, 247, 255, 0.9), 0 0 18px #46d1dd;
     }
     
     .h1-16 {
@@ -91,7 +110,7 @@
         background-color: #fff;
     }
     
-    .imgContainer img {
+    .portItem {
         border: 2px solid #46d1dd;
         margin: 10px auto;
         padding: .5rem;
@@ -105,9 +124,24 @@
         box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.46);
     }
     
-    .imgContainer img:hover {
+    .portItem img {
+        padding: .5rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 9px;
+    }
+    
+    .portItem:hover {
+        transition: 200ms ease-in;
         cursor: pointer;
-        animation: pulse 550ms ease-in-out;
+        opacity: .65;
+        box-shadow: 0 0 12px rgba(0, 247, 255, 0.45), 0 0 9px #46d1dd;
+    }
+    
+    .imgContainer img:focus {
+        box-shadow: 0;
     }
     
     html {
@@ -122,7 +156,7 @@
         height: 100%;
         background: linear-gradient(to top, #0c0c0c, #050505);
         background-size: cover;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: 'LatoR', sans-serif;
         overflow-x: hidden;
     }
     
@@ -131,8 +165,12 @@
         color: #eee;
     }
     
+    .goBackBtn {
+        margin-bottom: 20px;
+    }
+    
     p {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'LatoLH', sans-serif;
         font-size: 1.8rem;
         font-weight: 300;
     }
@@ -153,13 +191,16 @@
     .btn:hover {
         cursor: pointer;
         transition: 0.2s ease-in;
-        border-color: #122331;
-        background-color: #122331;
+        background-color: #46d1dd;
+        color: rgb(27, 27, 27);
+        border: 1px solid #04ddec;
+        box-shadow: 0 0 5px #1d8be6, 0 0 5px #46d1dd;
     }
     
     .gitBtnContainer {
         display: block;
-        margin-top: 2rem;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     
     .btnContainer {
@@ -175,8 +216,7 @@
         position: fixed;
         /* Stay in place */
         z-index: 1;
-        /* Sit on top */
-        padding-top: 100px;
+        margin: auto;
         /* Location of the box */
         left: 0;
         top: 0;
@@ -195,7 +235,9 @@
     
     .modal-content {
         margin: auto;
+        vertical-align: auto;
         display: block;
+        height: 100%;
     }
     
     .modal-content img {
@@ -271,8 +313,9 @@
     }
     
     .section-heading h6 {
+        font-family: 'LatoLH', sans-serif;
         font-size: 1.6rem;
-        font-weight: 300;
+        font-weight: 200;
     }
     
     .section {
@@ -308,6 +351,7 @@
     }
     
     .nav-list {
+        font-family: 'LatoLH', sans-serif;
         list-style: none;
         width: 100%;
         height: 100%;
@@ -321,15 +365,21 @@
     }
     
     .nav-link {
-        font-size: 2rem;
-        padding: 1rem;
+        font-size: 4rem;
     }
     
     .nav-link:hover,
     .nav-link:focus {
+        transition: 350ms ease-in-out;
         background: linear-gradient(to top, #2d5d85, #46d1dd);
+        text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 .65px #46d1dd;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    
+    .nav-link:after {
+        content: attr(data-text);
+        color: #8a8a8a;
     }
     
     .menu-toggler {
@@ -352,13 +402,15 @@
     }
     
     .bar {
-        background: linear-gradient(to right, #2d5d85, #46d1dd);
+        box-shadow: 0 0 7px rgba(255, 255, 255, 0.1), 0 0 .65px #ffffff;
+        background: #46d1dd;
         width: 100%;
         height: 4px;
         border-radius: .8rem;
     }
     
     .bar.start {
+        background: #46d1dd;
         transform-origin: right;
         transition: transform 450ms cubic-bezier(0.54, -0.81, 0.57, 0.57)
     }
@@ -368,7 +420,7 @@
     }
     
     .open .bar.start {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
     
     .bar.end {
@@ -378,7 +430,7 @@
     }
     
     .open .bar.end {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
     
     .landing-text {
@@ -394,7 +446,7 @@
     
     .landing-text h1 {
         font-size: 8rem;
-        background: linear-gradient(to top, #2d5d85, #46d1dd);
+        animation: pulseText 2s infinite;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 1rem;
@@ -402,6 +454,7 @@
     }
     
     .landing-text h6 {
+        animation: pulseText_wh 2s infinite;
         font-size: 1.75rem;
         font-weight: 300;
     }
@@ -443,7 +496,26 @@
     }
     
     .about-details {
+        text-align: center;
         flex: 1;
+    }
+    
+    #p_link {
+        color: #bebebe;
+    }
+    
+    #e_link {
+        color: #46d1dd;
+    }
+    
+    #e_link:hover {
+        transition: 125ms ease-in;
+        color: #308d96;
+    }
+    
+    #p_link:hover {
+        transition: 150ms ease-in-out;
+        color: rgb(136, 136, 136);
     }
     /*End about*/
     /*Start services*/
@@ -495,6 +567,7 @@
     }
     
     .icon-container i {
+        animation: 3s pulseText infinite;
         color: #46d1dd;
         font-size: 5rem;
         margin: auto;
@@ -504,6 +577,7 @@
     /*Start portfolio*/
     
     .portfolio-item {
+        margin-top: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -546,10 +620,12 @@
     }
     
     .portfolio-description .cta:hover {
+        text-shadow: 0 0 7px rgba(255, 0, 212, 0.25), 0 0 3px #cc00ff;
         color: #cc00ff;
     }
     
     .other-proj-panel {
+        font-family: 'LatoLH', sans-serif;
         text-align: center;
         font-size: 1.8em;
         align-items: center;
@@ -560,8 +636,16 @@
         text-align: left;
     }
     
-    .other-proj-panel li a:hover {
-        color: #cc00ff;
+    .other-proj-panel li:nth-of-type(2) a:hover {
+        transition: color 150ms;
+        color: #00ff00;
+        text-shadow: 0 0 7px rgba(21, 255, 0, 0.25), 0 0 3px #00ff00;
+    }
+    
+    .other-proj-panel li:nth-of-type(3) a:hover {
+        transition: color 150ms;
+        color: #ffae00;
+        text-shadow: 0 0 7px rgba(255, 94, 0, 0.25), 0 0 3px #ff6600;
     }
     
     .other-proj-panel li p {
@@ -579,7 +663,7 @@
     }
     
     .header-li {
-        color: #46d1dd;
+        color: #ffffff;
         font-size: 1.2em;
         font-weight: 700;
     }
@@ -598,8 +682,7 @@
         margin: 0 auto;
     }
     
-    form label {
-        padding: 2px;
+    #form label {
         font-size: 1.5rem;
     }
     
@@ -607,9 +690,10 @@
     textarea {
         min-width: 100%;
         padding: .5rem;
-        margin-top: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         border: 2px #46d1dd solid;
-        font-family: 'Noto Sans JP', sans-serif;
+        font-family: 'LatoR', sans-serif;
         background-color: transparent;
         color: white;
         outline-color: #46d1dd;
@@ -632,6 +716,7 @@
     }
     
     input[type="submit"]:hover {
+        box-shadow: 0 0 5px rgb(234, 0, 255), 0 0 .65px #cc00ff;
         background-color: #cc00ff;
         color: #ffffff;
         outline: none;
@@ -639,7 +724,7 @@
     }
     
     .contact {
-        color: #46d1dd;
+        color: #fff;
     }
     /*End contact*/
     /*Start footer*/
@@ -670,6 +755,19 @@
         margin: auto;
     }
     
+    .section-heading h1 .cta {
+        font-size: 18px;
+        font-family: 'LatoLH', sans-serif;
+    }
+    
+    .section-heading h1 .cta:hover {
+        transition: 350ms ease-in-out;
+        background: linear-gradient(to top, #2d5d85, #46d1dd);
+        text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 .65px #46d1dd;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
     .copyright p {
         font-size: 1.4rem;
     }
@@ -690,13 +788,37 @@
     
     @keyframes pulse {
         0% {
-            box-shadow: 0 0 0 0 rgba(87, 214, 253, 0.99);
+            box-shadow: 0 0 0px rgba(0, 247, 255, 0), 0 0 0px #46d1dd;
         }
         70% {
-            box-shadow: 0 0 0 2rem rgba(87, 214, 253, 0);
+            box-shadow: 0 0 20px rgba(0, 247, 255, 0.8), 0 0 14px #46d1dd;
         }
         100% {
-            box-shadow: 0 0 0 0 rgba(87, 214, 253, 0);
+            box-shadow: 0 0 0px rgb(0, 247, 255), 0 0 0px #46d1dd;
+        }
+    }
+    
+    @keyframes pulseText {
+        0% {
+            text-shadow: 0 0 0px rgba(0, 247, 255, 0), 0 0 0px #46d1dd;
+        }
+        50% {
+            text-shadow: 0 0 20px rgba(0, 247, 255, 0.5), 0 0 1px #46d1dd;
+        }
+        100% {
+            text-shadow: 0 0 0px rgb(0, 247, 255), 0 0 0px #46d1dd;
+        }
+    }
+    
+    @keyframes pulseText_wh {
+        0% {
+            text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 0px #ececec;
+        }
+        50% {
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 1px #f8f8f8;
+        }
+        100% {
+            text-shadow: 0 0 0px rgb(255, 255, 255), 0 0 0px #ececec;
         }
     }
     /*End animations*/
@@ -709,6 +831,10 @@
         }
     }
     
+    .normal {
+        animation: none;
+    }
+    
     @media screen and (max-width: 768px) {
         .portfolio-img img {
             width: 375px;
@@ -719,13 +845,10 @@
         }
         body {
             background: linear-gradient(to top, #0c0c0c, #050505);
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'LatoR', sans-serif;
         }
         .landing-text h1 {
             font-size: 5rem;
-            background: linear-gradient(to top, #f1f1f1, #ffffff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
         .landing-text h6 {
             font-size: 2.5rem;
@@ -862,7 +985,7 @@
     
     .intro-text {
         color: rgb(255, 255, 255);
-        font-family: 'Heebo', sans-serif;
+        font-family: 'LatoLH', sans-serif;
         font-size: 2rem;
         text-align: center;
     }

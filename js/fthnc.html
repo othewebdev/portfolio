@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fotohance. | Odis Barnett</title>
+    <link rel="icon" type=" image/png" href="./images/favicon.png" />
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Google Fonts NOTO SANS JP + ROBOTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!-- Portfolio Section -->
+    <section class="" style="margin-bottom: 14rem;" id="portfolio">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="section-heading">
+                <h1><a class="cta" href="index.html">&#x2B05; Go Back</a></h1>
+                <h1>fotohance</h1>
+                <h6 style="text-transform: uppercase;">Reactjs + Bootstrap</h6>
+            </div>
+            <!-- Portfolio Items -->
+            <div>
+
+                <!-- Fotohance -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img" data-aos="fade-left" data-aos-delay="200">
+                        <a target="_blank" href="https://fotohance.xyz/"><img data-src="images/fotohance.jpg" src="images/fotohance.jpg" alt="Fotohance"></a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="skills-used">
+                        <!-- HTML5 -->
+                        <div class="skill" data-aos="fade-in" data-aos-delay="400">
+                            <div class="icon-container">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML5</h3>
+                        </div>
+                        <!-- CSS -->
+                        <div class="skill" data-aos="fade-in" data-aos-delay="410">
+                            <div class="icon-container">
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <h3>CSS3</h3>
+                        </div>
+                        <!-- NodeJS -->
+                        <div class="skill" data-aos="fade-in" data-aos-delay="450">
+                            <div class="icon-container">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>ReactJS</h3>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="portfolio-description has-mr" data-aos="fade-right" data-aos-delay="300">
+                        <div class="imgContainer">
+                            <div class="portItem">
+                                <img data-src="./images/fotohance-2.JPG" src="./images/fotohance-2.JPG" id="img1" alt="Fotohance 2">
+                            </div>
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                            </div>
+                            <div class="portItem">
+                                <img src="./images/fotohance-3.JPG" id="img2" alt="Fotohance 3">
+                            </div>
+                            <div class="portItem">
+                                <img src="./images/fotohance-4.JPG" id="img3" alt="Fotohance 4">
+                            </div>
+
+                        </div>
+                        <!-- Desc -->
+                        <hr>
+                        <br>
+                        <div class="h1-16">
+                            <h1>Description:</h1>
+                        </div>
+                        <br>
+                        <p>Fotohance allows a user to edit image properties of a random image.
+                            <br><br>
+                            <hr>
+                            <br>
+                            <!-- Issues -->
+                            <div class="issuesContainer">
+                                <h1>Bugs I Ran Into:</h1>
+                                <ul>
+                                    <li>
+                                        <em>Image did not load from API properly</em>
+                                    </li>
+                                    <li>
+                                        <em>Image did not take on CSS edit properties</em>
+                                    </li>
+                                    <li>
+                                        <em>Site would not load properly after using custom domain</em>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Solutions -->
+                            <div class="solutionContainer">
+                                <h1>How I Fixed Them:</h1>
+                                <ul>
+                                    <li>
+                                        <em>Reconfigured app.get to properly receive our requested image.</em>
+                                    </li>
+                                    <li>
+                                        <em>Used module.exports to export function to ReactJS project</em>
+                                    </li>
+                                    <li>
+                                        <em>Reconfigured React Router with basename.</em>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </p>
+
+                    </div>
+                    <div class="btnContainer">
+                        <a class="btn" target="_blank" href="https://fotohance.xyz">view website</a>
+                        <a class="btn" target="_blank" href="https://github.com/othewebdev/fotohance">github</a>
+                    </div>
+
+                </div>
+    </section>
+
+
+    <footer class="copyright">
+        <a href="#top">
+            <div class="up" id="up">
+                <i style="color:white; " class="fas fa-chevron-up"></i>
+            </div>
+        </a>
+        <p id="dateFooter"></p>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <!-- The imageMagic -->
+    <script src="js/imgDefer.js"></script>
+    <!-- Year Date Magic-->
+    <script src="js/footerDate.js"></script>
+</body>
+
+</html>

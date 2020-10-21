@@ -15,8 +15,8 @@ img.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.style.border = 'none';
-    modalImg.style.height = "80vh";
-    modalImg.style.width = "80vw";
+    modalImg.style.height = "95vh";
+    modalImg.style.width = "95vw";
     modalImg.style.objectFit = "contain";
     captionText.innerHTML = this.alt;
 }
@@ -24,8 +24,8 @@ img2.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.style.border = 'none';
-    modalImg.style.height = "80vh";
-    modalImg.style.width = "80vw";
+    modalImg.style.height = "95vh";
+    modalImg.style.width = "95vw";
     modalImg.style.objectFit = "contain";
     captionText.innerHTML = this.alt;
 }
@@ -33,8 +33,8 @@ img3.onclick = function() {
     modal.style.display = "block";
     modalImg.src = this.src;
     modalImg.style.border = 'none';
-    modalImg.style.height = "80vh";
-    modalImg.style.width = "80vw";
+    modalImg.style.height = "95vh";
+    modalImg.style.width = "95vw";
     modalImg.style.objectFit = "contain";
     captionText.innerHTML = this.alt;
 }
@@ -45,8 +45,8 @@ if (img4, img5, img6, img7) {
         modal.style.display = "block";
         modalImg.src = this.src;
         modalImg.style.border = 'none';
-        modalImg.style.height = "80vh";
-        modalImg.style.width = "80vw";
+        modalImg.style.height = "95vh";
+        modalImg.style.width = "95vw";
         modalImg.style.objectFit = "contain";
         captionText.innerHTML = this.alt;
     }
@@ -55,8 +55,8 @@ if (img4, img5, img6, img7) {
         modal.style.display = "block";
         modalImg.src = this.src;
         modalImg.style.border = 'none';
-        modalImg.style.height = "80vh";
-        modalImg.style.width = "80vw";
+        modalImg.style.height = "95vh";
+        modalImg.style.width = "95vw";
         modalImg.style.objectFit = "contain";
         captionText.innerHTML = this.alt;
     }
@@ -65,8 +65,8 @@ if (img4, img5, img6, img7) {
         modal.style.display = "block";
         modalImg.src = this.src;
         modalImg.style.border = 'none';
-        modalImg.style.height = "80vh";
-        modalImg.style.width = "80vw";
+        modalImg.style.height = "95vh";
+        modalImg.style.width = "95vw";
         modalImg.style.objectFit = "contain";
         captionText.innerHTML = this.alt;
     }
@@ -75,8 +75,8 @@ if (img4, img5, img6, img7) {
         modal.style.display = "block";
         modalImg.src = this.src;
         modalImg.style.border = 'none';
-        modalImg.style.height = "80vh";
-        modalImg.style.width = "80vw";
+        modalImg.style.height = "95vh";
+        modalImg.style.width = "95vw";
         modalImg.style.objectFit = "contain";
         captionText.innerHTML = this.alt;
     }

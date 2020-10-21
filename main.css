@@ -1005,7 +1005,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background: rgb(0, 0, 0);
+        background: rgb(0, 26, 34);
         width: 100%;
         height: 100%;
         transform: translateY(100%);
@@ -1016,7 +1016,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background: rgb(255, 255, 255);
+        background: #46d1dd;
         width: 100%;
         height: 100%;
         transform: translateY(100%);
